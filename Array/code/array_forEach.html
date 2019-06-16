@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 01----->arr.forEach()的例子
+    // let arr = ['song', 'xu', 'min', 'mess']
+    // arr.forEach((item, index, arr) => {
+    //   console.log(item, index, arr)
+    // })
+
+
+
+    // 02----->arr.map()的例子
+    // arr.map()的目的旨在是对数据操作，之后返回修改后的数据
+    // let arr=[
+    //   {name:'songzmin',age:29,sex:'male'},
+    //   {name:'xuxingrong',age:24,sex:'female'},
+    //   {name:'songqianqian',age:33,sex:'female'},
+    //   {name:'zhangjunbo',age:8,sex:'male'},
+    // ]
+    //   let res=arr.map((item,index,arr)=>{
+    //     let json={};
+    //       json.n=item.name;
+    //       json.a=item.age+1;
+    //       json.s=item.sex;
+    //       return json
+    //   })
+    //   console.log(res)
+
+
+    // 03----->arr.filter()的例子，俗称数组的过滤器
+    // let arr=[
+    //   {name:'songzmin',age:29,sex:'male'},
+    //   {name:'xuxingrong',age:24,sex:'female'},
+    //   {name:'songqianqian',age:33,sex:'female'},
+    //   {name:'zhangjunbo',age:8,sex:'male'},
+    // ]
+    // let res=arr.filter((item,index,arr)=>{
+    //   return item.sex=="female"
+    // })
+    // console.log(res)
+
+    // 04----->arr.some()的例子，也属于查找，找到了返回true，没有返回false
+    // let arr=['apple','orange','banner'];
+    // let res=arr.some((item,index,arr)=>{
+    //   return item=="apple";
+    // })
+    // let res2=arr.some((item,index,arr)=>{
+    //   return item=="apple2"
+    // })
+    // console.log(res,res2)
+
+    // 04----->arr.every()的例子,之后都为真的时候才返回true
+    let arr=[1,3,5,7,9];
+    let arr2=[1,3,5,7,9,10];
+    let res=arr.every((item,index,arr)=>{
+      return item%2==1;
+    })
+    let res2=arr2.every((item,index,arr)=>{
+      return item%2==1
+    })
+    console.log(res,res2)
+  </script>
+</body>
+
+</html>
